@@ -1,5 +1,6 @@
 from random import randint
 
+# score based version
 def score(finalScore):
     userScore = 0
     computerScore = 0
@@ -49,12 +50,13 @@ def score(finalScore):
                 continue
             continue
 
+# continuous version
 def infinte():
     userScore = 0
     computerScore = 0
     options = ["ROCK", "PAPER", "SCISSORS"]
 
-    while True:
+    while True: # keeps the game running forever until a break is called
         computerChoice = options[randint(0,2)]
         userChoice = str(input("Rock, Paper, or Scissors (type break to stop)? ")).upper()
 
